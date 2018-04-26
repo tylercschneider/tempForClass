@@ -1,0 +1,33 @@
+.big, .small {
+	display: flex;
+	background-color: #551A8B;
+	font-family: 'Lato';
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+h4, a {
+	color: rgba(255,255,255,0.8);
+}
+h4 {
+	margin-left: 15px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+}
+
+.big {
+	display: fixed;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+.small {
+	width: 20%;
+	justify-content: space-around;
+	margin-right: 15px;
+}

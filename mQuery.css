@@ -1,0 +1,32 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+	height: 300px;
+}
+.box {
+
+}
+#box1 {
+	height: ;
+	background-color: blue;
+	width: ;
+}
+#box2 {
+	height: 200px ;
+	width: ;
+	background-color: red;
+}
+#box3 {
+	height: ;
+	width: ;
+	background-color: green;
+}
+p {
+	font-size: 10px;
+
+}
+@media only screen and (min-width: 768px){
+	p {
+		font-size: 60px;
+	}
+}
