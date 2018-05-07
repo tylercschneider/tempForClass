@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circle</title>
+	<style type="text/css">
+		#circle {
+			border-radius: 100%;
+			background-color: red;
+
+		}
+	</style>
+</head>
+<body>
+	<button type="button" onclick="createCircle()">Create Circle</button>
+	<div id="circle"></div>
+	<div id="output"></div>
+	<script type="text/javascript">
+	function createCircle() {
+		let radius = prompt("Enter a radius for your circle.");
+
+		let area = calcCircleArea(radius);
+		setStyle(radius);
+		printValues(area, radius);
+
+	}
+	function calcCircleArea(radius) {
+		let pi = Math.PI;
+		let area = radius * radius * pi;
+		return area;
+	}
+	function setStyle(radius) {
+		let diameter = radius*2;
+		console.log(diameter);
+		document.getElementById("circle").setAttribute("style", "height: "+ diameter +";");
+		document.getElementById("circle").setAttribute("style", "width: "+diameter+";");
+	}
+	function printValues(area, radius) {
+		console.log(`The area is ${area}, because the radius was ${radius}`);
+	}
+
+
+	</script>
+
+</body>
+</html>

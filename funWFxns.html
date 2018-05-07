@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fxns yo ho ho</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		//Function Declaration
+		function helloWorld() {
+			console.log("Hello world!");
+		}
+
+		helloWorld();
+
+		//Function Expression
+		const calculateVol = function(length, width, height=10) {
+			let vol = length*width*height;
+			console.log(`Given a length of ${length}`);
+			console.log(`a width of ${width}`);
+			console.log(`and a height of ${height}`);
+			console.log(`your volume will be ${vol}`);
+			console.log("You feel?");
+		}
+		let volume = calculateVol(10, 20, 16);
+
+
+		//Arrow Function Expression
+		const getNamePrintOut = (name) => {
+			let output = `Hello there, ${name}! You look good today!`;
+			return output;
+		};
+
+		function printArea(length, width) {
+			let calcu = length*width;
+			console.log(`Area is equal to ${calcu} when length is ${length} and width is ${width}...math`);
+		}
+		let dataSet = [1,2,3,4,5,6,7,8,9,10,11];
+		let length;
+		let width;
+		for(i=0; i<dataSet.length; i++) {
+			length = dataSet[i];
+			if(dataSet[i-1]===undefined) {
+				width = 12;
+			}
+			else {
+				width = dataSet[i-1];
+			}
+			printArea(length, width);
+		}
+
+	</script>
+
+</body>
+</html>
